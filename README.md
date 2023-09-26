@@ -16,4 +16,4 @@ If you have any questions or find any bugs, please let me know: [Jiatong Bao] jt
 
 
 ## Acknowledgement
-Our code is based on [VPG](https://github.com/andyzeng/visual-pushing-grasping) and [Good Robot!](https://github.com/jhu-lcsr/good_robot).
+Our code is based on [DSVP](https://github.com/HongbiaoZ/dsv_planner).
