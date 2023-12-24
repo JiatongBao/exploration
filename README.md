@@ -13,13 +13,35 @@ Fig.1 Overview of our method. The example environment which the robot is require
 ## Videos
 <b> Exploring in the simulated environments</b>
 
-To be available.
+[![ Explore in the simulated indoor environment ](https://res.cloudinary.com/marcomontalbano/image/upload/v1703407943/video_to_markdown/images/youtube--6gFU1xZ8MiU-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=6gFU1xZ8MiU " Explore in the simulated indoor environment ")
 
 <b>Exploring in a real underground parking lot environment</b>
 <div align="center"><img src="images/keyframes.gif" width="100%"/></div>
 Note: We took screenshots throughout our exploration and later compiled these key moments into a brief video.
 
+## How to compile
 
+- edit the "def.h"
+- enable "#define NEW_METHOD" for running our method
+- disable "#define NEW_METHOD" for running the original DSVP method
+
+```
+cd dsv_planner
+catkin_make
+```
+
+## How to run
+- launch the simulated environment
+```
+roslaunch vehicle_simulator system_indoor.launch
+```
+- run the exploration planner
+```
+cd dsv_planner
+catkin_make
+source devel/setup.bash
+roslaunch dsvp_launch explore_indoor.launch
+```
 ## Contact
 If you have any questions or find any bugs, please let me know: [Jiatong Bao] jtbao[at]yzu[dot]edu[dot]cn
 
