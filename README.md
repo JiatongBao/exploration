@@ -47,4 +47,6 @@ If you have any questions or find any bugs, please let me know: [Jiatong Bao] jt
 
 
 ## Acknowledgement
-Our code is based on [DSVP](https://github.com/HongbiaoZ/dsv_planner).
+The benchmark exploration dataset is from [autonomous_exploration_development_environment](https://github.com/HongbiaoZ/autonomous_exploration_development_environment).
+
+Our planner code is based on [DSVP](https://github.com/HongbiaoZ/dsv_planner).
