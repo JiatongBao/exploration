@@ -1,6 +1,6 @@
 # An Improved Dual-Stage Viewpoint Planner for Rapid Exploration by Frontier Clustering and Tour Planning
 
-This repository will provide C++ code for autonomous exploration in both simulation and real-world settings on a mobile robot. This is the reference implementation for the paper which has been submitted on <i>T-ASE</i>.
+This repository will provide C++ code for autonomous exploration in both simulation and real-world settings on a mobile robot. This is the reference implementation for the paper which has been submitted on <i>Robotica</i>.
 
 ### An Improved Dual-Stage Viewpoint Planner for Rapid Exploration by Frontier Clustering and Tour Planning
 
