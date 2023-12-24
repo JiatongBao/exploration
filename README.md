@@ -10,6 +10,15 @@ Autonomous exploration in unknown environments has become a critical capability 
 <div align="center"><img src="images/method.png" width="80%"/></div>
 Fig.1 Overview of our method. The example environment which the robot is required to explore is shown as a 2D map. Explored areas are depicted in blue, while unexplored regions are represented by white spaces. Our method comprises two stages: the exploration stage and the relocation stage. During the exploration stage, an RRT is expanded within the local planning horizon, where each node serves as a viewpoint. Frontiers are identified from these viewpoints. The identified local frontiers are clustered, with each cluster corresponding to a local candidate goal. By using local tour planning, the optimal local candidate goal is selected as the subsequent navigation target, considering the remaining goals as global ones. Once no frontier clusters in the local planning horizon remain, the robot switches to the relocation stage. In this stage, all updated global candidate goals are employed for global tour planning. The robot is then guided towards the selected global goal. These two stages are executed back-and-forth until no global candidate goals remain.
 
+## Videos
+<b> Exploring in the simulated environments</b>
+
+To be available.
+
+<b>Exploring in a real underground parking lot environment</b>
+<div align="center"><img src="images/keyframes.gif" width="100%"/></div>
+Note: We took screenshots throughout our exploration and later compiled these key moments into a brief video.
+
 
 ## Contact
 If you have any questions or find any bugs, please let me know: [Jiatong Bao] jtbao[at]yzu[dot]edu[dot]cn
