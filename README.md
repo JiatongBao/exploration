@@ -17,6 +17,8 @@ Fig.1 Overview of our method. The example environment which the robot is require
 
 [![Explore in simulated campus environment](https://res.cloudinary.com/marcomontalbano/image/upload/v1710332037/video_to_markdown/images/youtube--sTrAIejMLj4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/sTrAIejMLj4 "Explore in simulated campus environment")
 
+[![Explore in simulated garage environment](https://res.cloudinary.com/marcomontalbano/image/upload/v1710335011/video_to_markdown/images/youtube--1TSQh2SxVJc-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=1TSQh2SxVJc "Explore in simulated garage environment")
+
 <b>Exploring in a real underground parking lot environment</b>
 <div align="center"><img src="images/keyframes.gif" width="100%"/></div>
 Note: We took screenshots throughout our exploration and later compiled these key moments into a brief video.
