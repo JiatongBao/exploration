@@ -1,6 +1,6 @@
 # Combining Spatial Clustering and Tour Planning for Efficient Full Area Exploration
 
-This repository will provide C++ code for autonomous exploration in both simulation and real-world settings on a mobile robot. This is the reference implementation for the paper which has been submitted for review.
+This repository provides C++ code for autonomous exploration in both simulation and real-world settings on a mobile robot. This is the reference implementation for the paper which has been published on Robotica.
 
 ### Combining Spatial Clustering and Tour Planning for Efficient Full Area Exploration
 
@@ -25,17 +25,18 @@ Note: We took screenshots throughout our exploration and later compiled these ke
 
 ## How to compile
 
-- edit the "def.h"
+- edit the file "src/dsvplanner/dsvplanner\include/dsvplanner/def.h"
 - enable "#define NEW_METHOD" for running our method
 - disable "#define NEW_METHOD" for running the original DSVP method
+- we suggest set CLUSTERING_EPSILON = 2 for narrow environments and set CLUSTERING_EPSILON = 3 for spatious environments
 
 ```
-cd dsv_planner
+cd exploration
 catkin_make
 ```
 
 ## How to run
-- launch the simulated environment
+- launch the simulated environment from [autonomous_exploration_development_environment](https://github.com/HongbiaoZ/autonomous_exploration_development_environment)
 ```
 roslaunch vehicle_simulator system_indoor.launch
 ```
@@ -46,6 +47,26 @@ catkin_make
 source devel/setup.bash
 roslaunch dsvp_launch explore_indoor.launch
 ```
+- DO NOT forget to edit the "src/utils/lkh_tsp_solver/resource/single.par" and revise the file path according to your system environment.
+```
+PROBLEM_FILE = /home/ralab/Research/dsv_planner/src/utils/lkh_tsp_solver/resource/single.tsp
+OUTPUT_TOUR_FILE =/home/ralab/Research/dsv_planner/src/utils/lkh_tsp_solver/resource/single.txt
+```
+
+## Citing
+
+If you find this code useful in your work, please consider citing:
+```
+@article{bao2024explore, 
+  title={Combining spatial clustering and tour planning for efficient full area exploration}, 
+  DOI={10.1017/S0263574724001085}, 
+  journal={Robotica}, a
+  uthor={Bao, Jiatong and Mamun, Sultan and Bao, Jiawei and Zhang, Wenbing and Yang, Yuequan and Song, Aiguo}, 
+  year={2024}, 
+  pages={1–19}
+}
+```
+
 ## Contact
 If you have any questions or find any bugs, please let me know: [Jiatong Bao] jtbao[at]yzu[dot]edu[dot]cn
 
